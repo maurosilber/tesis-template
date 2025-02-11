@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{report}
+% TODO: add "twoside" to print
+
+% Language
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{csquotes}
+\MakeOuterQuote{"}  % to use regular quotation marks ("...") instead of `...'
+
+% Math
+\usepackage{amsmath}
+
+% URL
+\usepackage[hidelinks]{hyperref}
+
+% Figures
+\usepackage{graphicx}
+\setcounter{totalnumber}{1}  % 1 float per page
+
+% Bibliography
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
+% Multiple files
+\usepackage{subfiles}
+
+\title{}
+\author{}
+
+\begin{document}
+
+\subfile{caratula.tex}
+
+\tableofcontents
+
+\subfile{1.tex}
+\subfile{2.tex}
+
+\bibliography{bibliography.bib}
+
+\end{document}

@@ -1,0 +1,26 @@
+{
+    "latex-workshop.latex.outDir": "_build",
+    "latex-workshop.latex.rootFile.doNotPrompt": true,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "tectonic",
+            "command": "pixi",
+            "args": [
+                "run",
+                "tectonic",
+                "--synctex",
+                "--outdir",
+                "_build",
+                "%DOC_EXT%"
+            ],
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        }
+    ]
+}

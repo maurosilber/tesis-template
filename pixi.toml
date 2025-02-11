@@ -1,0 +1,6 @@
+[project]
+name = "tesis"
+channels = ["https://repo.prefix.dev/conda-forge"]
+
+[dependencies]
+tectonic = "*"
